@@ -1,6 +1,7 @@
 const addClass = (dom, name) => {
   dom.className += ` ${name}`;
 }
+
 const removeClass = (dom, name) => {
   let classNames = dom.className.split(' ');
   let classIndex = classNames.indexOf(name);
@@ -11,6 +12,7 @@ const removeClass = (dom, name) => {
     }
   }
 }
+
 const hasClass = (dom, name) => {
   let classNames = dom.className.split(' ');
   let classIndex = classNames.indexOf(name);
